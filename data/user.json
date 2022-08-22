@@ -1,0 +1,47 @@
+[
+    {
+        "username": "miki",
+        "password": "stein",
+        "fullname": "miki_stein",
+        "score": null,
+        "isAdmin": false,
+        "isInstructor": true,
+        "activities_count": 34
+    },
+    {
+        "username": "dikla",
+        "password": "nirim",
+        "fullname": "dikla_nirim",
+        "isInstructor": false,
+        "isAdmin": false,
+        "score": null,
+        "activities_count": 12
+    },
+    {
+        "username": "ron",
+        "password": "ron",
+        "fullname": "ron_roni",
+        "isAdmin": true,
+        "isInstructor": false,
+        "score": 70,
+        "activities_count": 1
+    },
+    {
+        "username": "shlomit",
+        "password": "dotan",
+        "fullname": "shlomit_dotan",
+        "isAdmin": false,
+        "isInstructor": false,
+        "score": 490,
+        "activities_count": 3
+    },
+    {
+        "username": "dvash",
+        "password": "sagol",
+        "fullname": "dvash_sagol",
+        "isAdmin": false,
+        "isInstructor": false,
+        "score": 350,
+        "activities_count": 5
+    }
+]

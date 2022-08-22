@@ -1,0 +1,93 @@
+[
+  {
+    "name": "snake",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "games"
+    ],
+    "createAT": 1652641506449,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "4_in_a_row",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "games"
+    ],
+    "createAT": 1652641506450,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "X/O",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "group-activity"
+    ],
+    "createAT": 1652641506451,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "the_bus_drive ",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "real-life"
+    ],
+    "createAT": 1652641506452,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "shopping-day",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "real-life"
+    ],
+    "createAT": 1652641506453,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "supermarket",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "real-life"
+    ],
+    "createAT": 1652641506454,
+    "active": true,
+    "img": "",
+    "rating": []
+  },
+  {
+    "name": "open_chat_room",
+    "min_score": 70,
+    "med_score": 140,
+    "max_score": 210,
+    "labels": [
+      "open-rooms"
+    ],
+    "createAT": 1652641506455,
+    "active": true,
+    "img": "",
+    "rating": []
+  }
+]
