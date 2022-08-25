@@ -2,7 +2,7 @@
     {
         "username": "miki",
         "password": "stein",
-        "fullname": "miki_stein",
+        "fullName": "miki_stein",
         "score": null,
         "isAdmin": false,
         "isInstructor": true,
@@ -11,7 +11,7 @@
     {
         "username": "dikla",
         "password": "nirim",
-        "fullname": "dikla_nirim",
+        "fullName": "dikla_nirim",
         "isInstructor": false,
         "isAdmin": false,
         "score": null,
@@ -20,7 +20,7 @@
     {
         "username": "ron",
         "password": "ron",
-        "fullname": "ron_roni",
+        "fullName": "ron_roni",
         "isAdmin": true,
         "isInstructor": false,
         "score": 70,
@@ -29,7 +29,7 @@
     {
         "username": "shlomit",
         "password": "dotan",
-        "fullname": "shlomit_dotan",
+        "fullName": "shlomit_dotan",
         "isAdmin": false,
         "isInstructor": false,
         "score": 490,
@@ -38,7 +38,7 @@
     {
         "username": "dvash",
         "password": "sagol",
-        "fullname": "dvash_sagol",
+        "fullName": "dvash_sagol",
         "isAdmin": false,
         "isInstructor": false,
         "score": 350,

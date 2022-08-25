@@ -1,6 +1,6 @@
 const fs = require('fs')
 const asyncLocalStorage = require('./als.service')
-const utilService = require('./util.service')
+// const utilService = require('./util.service')
 
 const logsDir = './logs'
 if (!fs.existsSync(logsDir)) {
@@ -23,9 +23,9 @@ function doLog(level, ...args) {
         (typeof arg === 'string' || isError(arg)) ? arg : JSON.stringify(arg)
     )
 
-    var line = strs.join(' | ')
+    let line = strs.join(' | ')
     const store = asyncLocalStorage.getStore()
-    const userId = store?.loggedinUser?._id
+    const userId = store?.loggedUser?._id
     const str = userId ? `(userId: ${userId})` : ''
     line = `${getTime()} - ${level} - ${line} ${str}\n`
     console.log(line)

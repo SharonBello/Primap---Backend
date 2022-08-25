@@ -19,14 +19,14 @@ async function login(username, password) {
     return user
 }
 
-async function signup(username, password, fullname) {
+async function signup(username, password, fullName) {
     const saltRounds = 10
 
-    logger.debug(`auth.service - signup with username: ${username}, fullname: ${fullname}`)
-    if (!username || !password || !fullname) return Promise.reject('fullname, username and password are required!')
+    logger.debug(`auth.service - signup with username: ${username}, fullName: ${fullName}`)
+    if (!username || !password || !fullName) return Promise.reject('fullName, username and password are required!')
 
     const hash = await bcrypt.hash(password, saltRounds)
-    return userService.add({ username, password: hash, fullname })
+    return userService.add({ username, password: hash, fullName })
 }
 
 function getLoginToken(user) {
@@ -37,8 +37,8 @@ function validateToken(loginToken) {
     try {
 
         const json = cryptr.decrypt(loginToken)
-        const loggedinUser = JSON.parse(json)
-        return loggedinUser
+        const loggedUser = JSON.parse(json)
+        return loggedUser
     } catch(err) {
         console.log('Invalid login token')
     }

@@ -1,4 +1,15 @@
 {
+  "name": "my-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharonBello/Primap---Backend.git"
+  },
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.6",
@@ -15,12 +26,5 @@
     "start": "set NODE_ENV=development && nodemon server.js",
     "server:dev": "set NODE_ENV=development && nodemon server.js",
     "server:prod": "node server.js"
-  },
-  "name": "backend",
-  "version": "1.0.0",
-  "main": "server.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }

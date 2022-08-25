@@ -93,7 +93,6 @@ function remove(activityId) {
     return _saveActivitiesToFile()
 }
 
-
 function getEmptyActivity() {
     return {
         name: '',

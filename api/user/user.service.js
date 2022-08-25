@@ -23,6 +23,7 @@ async function query(filterBy = {}) {
             user.createdAt = ObjectId(user._id).getTimestamp()
             // Returning fake fresh data
             // user.createdAt = Date.now() - (1000 * 60 * 60 * 24 * 3) // 3 days ago
+            console.log('users.service 26', users)
             return user
         })
         return users
@@ -70,7 +71,7 @@ async function update(user) {
         const userToSave = {
             _id: ObjectId(user._id),
             username: user.username,
-            fullname: user.fullname,
+            fullName: user.fullName,
             score: user.score,
             activities_count: user.activities_count
         }
@@ -89,7 +90,7 @@ async function add(user) {
         const userToAdd = {
             username: user.username,
             password: user.password,
-            fullname: user.fullname,
+            fullName: user.fullName,
             score: user.score || 0,
             activities_count: user.activities_count
         }
@@ -112,7 +113,7 @@ function _buildCriteria(filterBy) {
                 username: txtCriteria
             },
             {
-                fullname: txtCriteria
+                fullName: txtCriteria
             }
         ]
     }

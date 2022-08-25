@@ -1,19 +1,23 @@
 const MongoClient = require('mongodb').MongoClient
 
-const config = require('../config')
+// const config = require('../config')
+let config
 
-module.exports = {
-    getCollection
-}
+if (process.env.NODE_ENV === 'production') {
+    config = { 'dbURL': 'mongodb+srv://Sharon:Better@primap.dedgka6.mongodb.net/test' }
+ } else {
+    // config = { 'dbURL': 'mongodb://localhost:27017' }
+    config = { 'dbURL': 'mongodb+srv://Sharon:Better@primap.dedgka6.mongodb.net/test' }
+ }
 
 // Database Name
 const dbName = 'primap_db'
 
-var dbConn = null
+let dbConn = null
 
 async function getCollection(collectionName) {
     try {
-        const db = await connect()
+        const db = await _connect()
         const collection = await db.collection(collectionName)
         return collection
     } catch (err) {
@@ -22,7 +26,7 @@ async function getCollection(collectionName) {
     }
 }
 
-async function connect() {
+async function _connect() {
     if (dbConn) return dbConn
     try {
         const client = await MongoClient.connect(config.dbURL, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -35,6 +39,9 @@ async function connect() {
     }
 }
 
+module.exports = {
+    getCollection
+}
 
 
 
